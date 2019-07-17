@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+  <title>Hello, world!</title>
+</head>
+
+<body>
+  <div class="container">
+    <form>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col" colspan="6" class="text-center table-active">Customer Information</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Title</th>
+            <td colspan="5">
+              <div class="row">
+                <div class="col">
+                  <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Mr</label>
+                  </div>
+                  <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                    <label class="form-check-label" for="exampleCheck2">Madam</label>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck3">
+                    <label class="form-check-label" for="exampleCheck3">Miss</label>
+                  </div>
+                  <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck4">
+                    <div class="others-field">
+                      <label class="form-check-label" for="exampleCheck4">Others</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Name (as per NRIC/Passport)</th>
+            <td colspan="5"><textarea class="form-control" rows="3"></textarea></td>
+          </tr>
+          <tr>
+            <th scope="row">Identity Type</th>
+            <td colspan="5">
+              <div class="row">
+                <div class="col">
+                  <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="nric">
+                    <label class="form-check-label" for="nric">NRIC</label>
+                  </div>
+                </div>
+                <div class="col">
+                  <input type="checkbox" class="form-check-input" id="passport">
+                  <label class="form-check-label" for="passport">Passport</label>
+                </div>
+                <div class="col">
+                  <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="others">
+                    <div class="others-field">
+                      <label class="form-check-label" for="others">Others</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Gender</th>
+            <td colspan="5">
+              <div class="row">
+                <div class="col">
+                  <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="male">
+                    <label class="form-check-label" for="male">Male</label>
+                  </div>
+                </div>
+                <div class="col">
+                  <input type="checkbox" class="form-check-input" id="female">
+                  <label class="form-check-label" for="female">Female</label>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Date of Birth</th>
+            <td colspan="5">
+              <input type="text" class="form-control" placeholder="DD/MM/YYYY">
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Place of Birth</th>
+            <th scope="row">City/Country</th>
+            <td colspan="4">
+              <input type="text" class="form-control">
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Marital Status</th>
+            <td colspan="5">
+              <div class="row">
+                <div class="col">
+                  <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="single">
+                    <label class="form-check-label" for="single">Single</label>
+                  </div>
+                </div>
+                <div class="col">
+                  <input type="checkbox" class="form-check-input" id="married">
+                  <label class="form-check-label" for="married">Married</label>
+                </div>
+                <div class="col">
+                  <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="others2">
+                    <div class="others-field">
+                      <label class="form-check-label" for="others2">Others</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Country/Region</th>
+            <td colspan="5">
+              <input type="text" class="form-control">
+            </td>
+          </tr>
+          <tr>
+            <th>Type of Visa</th>
+            <td colspan="3" width="50%">
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="diplomatic">
+                <label class="form-check-label" for="diplomatic">Diplomatic</label>
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="pass">
+                <label class="form-check-label" for="pass">Employment Pass</label>
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="depass">
+                <label class="form-check-label" for="depass">Dependent Pass</label>
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="student">
+                <label class="form-check-label" for="student">Student Pass</label>
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="home">
+                <label class="form-check-label" for="home">Malaysia My Second Home</label>
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="others2">
+                <div class="others-field">
+                  <label class="form-check-label" for="others2">Others</label>
+                  <input type="text" class="form-control">
+                </div>
+            </td>
+            <th>Visa Expiry Date</th>
+            <td>
+              <input type="text" class="form-control" placeholder="DD/MM/YYYY">
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Residential Address</th>
+            <td colspan="3">
+              <textarea class="form-control" rows="2"></textarea>
+            </td>
+            <th scope="row">Postcode</th>
+            <td>
+              <input type="number" class="form-control">
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Residential Address</th>
+            <td colspan="3">
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="same">
+                <label class="form-check-label" for="same">Same as Residential Address above</label>
+              </div>
+              <textarea class="form-control" rows="2"></textarea>
+            </td>
+            <th scope="row">Postcode</th>
+            <td>
+              <input type="number" class="form-control">
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Corresspondence Address</th>
+            <td colspan="3">
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="same">
+                <label class="form-check-label" for="same">Same as Residential Address above</label>
+              </div>
+              <textarea class="form-control" rows="2"></textarea>
+            </td>
+            <th scope="row">Postcode</th>
+            <td>
+              <input type="number" class="form-control">
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
